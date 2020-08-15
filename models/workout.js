@@ -22,7 +22,7 @@ const workoutSchema = new Schema({
         type: Number,
         default: 0
       },
-      reps: {
+      distance: {
         type: Number,
         default: 0
       },
@@ -30,7 +30,7 @@ const workoutSchema = new Schema({
         type: Number,
         default: 0
       },
-      distance: {
+      reps: {
         type: Number,
         default: 0
       }
