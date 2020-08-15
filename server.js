@@ -2,8 +2,15 @@ const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 const path = require("path");
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 const app = express();
+
+app.set( 'port', ( process.env.PORT || 3000 ));
+
+// Start node server
+app.listen( app.get( 'port' ), function() {
+  console.log( 'Node server is running on port ' + app.get( 'port' ));
+  });
 
 app.use(logger("dev"));
 
@@ -28,6 +35,6 @@ app.get("/stats", (req, res) => {
     res.sendFile(path.join(__dirname + "/public/stats.html"));
 });
 
-app.listen(PORT, () => {
-    console.log(`App running on port ${PORT}!`);
-});
+// app.listen(PORT, () => {
+//     console.log(`App running on port ${PORT}!`);
+// });
