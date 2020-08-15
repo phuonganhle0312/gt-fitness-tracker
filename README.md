@@ -39,4 +39,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contributing
 
-We are nott currently accepting contributors at the moment.
+We are not currently accepting contributors at the moment.
